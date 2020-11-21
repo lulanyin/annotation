@@ -1,0 +1,31 @@
+{
+  "name": "lulanyin/annotation",
+  "description": "PHP注解",
+  "keywords": [
+    "annotation",
+    "php annotation"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "lulanyin",
+      "email": "me@lanyin.lu"
+    }
+  ],
+  "require": {
+    "doctrine/annotations": "1.4",
+    "php": "^7.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Small\\Annotation\\" : "src/"
+    }
+  },
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://mirrors.aliyun.com/composer/"
+    }
+  }
+}
