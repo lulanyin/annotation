@@ -1,11 +1,11 @@
 <?php
-namespace Small\Annotation;
+namespace Inphp\Annotation;
 
 use Doctrine\Common\Annotations\AnnotationException;
 use Doctrine\Common\Annotations\AnnotationReader;
 use ReflectionClass;
 use ReflectionException;
-use Small\Annotation\Processor\After;
+use Inphp\Annotation\Processor\After;
 
 class AnnotationProcessor
 {

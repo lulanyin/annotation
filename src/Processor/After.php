@@ -1,14 +1,14 @@
 <?php
-namespace Small\Annotation\Processor;
+namespace Inphp\Annotation\Processor;
 
 use Doctrine\Common\Annotations\Annotation\Target;
-use Small\Annotation\IAnnotation;
+use Inphp\Annotation\IAnnotation;
 
 /**
  * @Annotation
  * @Target({"CLASS", "METHOD"})
  * Class After
- * @package Small\Annotation\Parser
+ * @package Inphp\Annotation\Parser
  */
 class After implements IAnnotation {
 

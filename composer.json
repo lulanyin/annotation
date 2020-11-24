@@ -1,5 +1,5 @@
 {
-  "name": "lulanyin/annotation",
+  "name": "inphp/annotation",
   "description": "PHP注解",
   "keywords": [
     "annotation",
@@ -19,7 +19,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Small\\Annotation\\" : "src/"
+      "Inphp\\Annotation\\" : "src/"
     }
   },
   "repositories": {

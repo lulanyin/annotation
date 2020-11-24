@@ -1,14 +1,14 @@
 <?php
-namespace Small\Annotation\Processor;
+namespace Inphp\Annotation\Processor;
 
 use Doctrine\Common\Annotations\Annotation\Target;
-use Small\Annotation\IAnnotation;
+use Inphp\Annotation\IAnnotation;
 
 /**
  * @Annotation
  * @Target("PROPERTY")
  * Class Inject
- * @package Small\annotation\parser
+ * @package Inphp\annotation\parser
  */
 class Inject implements IAnnotation
 {

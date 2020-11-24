@@ -1,10 +1,10 @@
 <?php
-namespace Small\Annotation;
+namespace Inphp\Annotation;
 
 /**
  * 注解处理类的接口类，实现它即可
  * Interface IParser
- * @package Small\annotation
+ * @package Inphp\annotation
  */
 interface IAnnotation
 {

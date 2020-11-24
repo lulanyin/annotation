@@ -1,8 +1,8 @@
 <?php
-namespace Small\Annotation;
+namespace Inphp\Annotation;
 
 use Doctrine\Common\Annotations\AnnotationRegistry;
-use Small\Annotation\Processor\After;
+use Inphp\Annotation\Processor\After;
 
 class Annotation{
 
