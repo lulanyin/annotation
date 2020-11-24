@@ -13,4 +13,6 @@ composer require inphp/annitation
 
 //处理类的注解 $class 是已初始化的类， $method 可选，是本次类需要执行的方法
 \Inphp\Annotation\Annotation::process($class, $method);
+
+//请遵循 IAnnotation，实现 process 接口
 ```
