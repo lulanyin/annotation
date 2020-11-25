@@ -2,7 +2,6 @@
 namespace Inphp\Annotation;
 
 use Doctrine\Common\Annotations\AnnotationRegistry;
-use Inphp\Annotation\Processor\After;
 
 class Annotation{
 
@@ -10,27 +9,11 @@ class Annotation{
      * 处理
      * @param $class
      * @param string|null $method
-     * @return mixed|null
+     * @return void
      */
     public static function process($class, string $method = null)
     {
-        $afterProcessors = AnnotationProcessor::init($class, $method)->parse();
-        if(!is_null($method)){
-            $result = $class->{$method}();
-        }else{
-            $result = null;
-        }
-        if(!empty($afterProcessors)){
-            foreach ($afterProcessors as $processor){
-                if($processor instanceof After){
-                    $processor->setResult($result)->process($class, $method, 'method');
-                    $result = $processor->getResult();
-                }else{
-                    $processor->process($class, $method, 'method');
-                }
-            }
-        }
-        return $result;
+        AnnotationProcessor::init($class, $method)->parse();
     }
 
     /**
